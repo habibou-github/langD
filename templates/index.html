@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="stylesheet" type="text/css" href="../static/index.css"> 
+
+
+
+
+	</head>
+	
+	<body>
+
+        <form class="grid" action="/result" method="POST">
+
+
+           
+          <label for="name">Enter the text you want to detect its language :</label>
+          <input type="text" id="name" name="name">
+
+          <center><input class="file_submit" type="Submit"></center>
+
+        </form>
+
+
+
+        
+
+        
+        <br>
+        <br>
+        <br>
+          {% if name %}
+            <center>
+              <h2 style="color: blue;" class="let_space">{{name}}</h2>
+              <br>
+              <h4>{{out}}</h4>
+
+            </center>
+
+          {% endif %}
+
+    </body>
+
+</html>
